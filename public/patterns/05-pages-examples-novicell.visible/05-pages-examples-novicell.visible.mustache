@@ -1,0 +1,27 @@
+<h1>novicell.visible.js</h1>
+<p>This is a demo page for testing the script.</p>
+<p>Running the script will console.log if the element "js-outside-viewport" is outside the viewport.</p>
+
+<button id="js-visible-trigger">Run script</button>
+
+<p>Result: <span id="js-visible-result"></span></p>
+
+<div id="js-outside-viewport" style="position: relative; bottom: -2000em;">Am visible?</div>
+
+<script src="/js/novicell.visible.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Do not use this, only for example purposes!
+    var trigger = document.querySelector('#js-visible-trigger');
+
+    trigger.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      var elementId = '#js-outside-viewport';
+
+      console.log(novicell.visible.isVisible(elementId));
+
+      document.querySelector('#js-visible-result').innerHTML = novicell.visible.isVisible(elementId);
+    });
+  });
+</script>
