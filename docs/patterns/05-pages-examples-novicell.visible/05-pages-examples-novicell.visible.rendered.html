@@ -6,8 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" />
 
-  <link rel="stylesheet" href="../../css/style.css?1500560060592" media="all" />
-  <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1500560060592" media="all" />
+  <link rel="stylesheet" href="../../css/style.css?1500571487885" media="all" />
+  <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1500571487885" media="all" />
 
   <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
   <!-- never cache patterns -->
@@ -17,8 +17,8 @@
   <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
   <meta http-equiv="pragma" content="no-cache" />
 
-  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1500560060592" media="all">
-  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1500560060592" media="all" />
+  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1500571487885" media="all">
+  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1500571487885" media="all" />
 
   <!-- End Pattern Lab -->
 
@@ -28,7 +28,6 @@
 
   <h1>novicell.visible.js</h1>
   <p>This is a demo page for testing the script.</p>
-  <p>Running the script will console.log if the element "js-outside-viewport" is outside the viewport.</p>
 
   <button id="js-visible-trigger">Run script</button>
 
@@ -36,7 +35,7 @@
 
   <div id="js-outside-viewport" style="position: relative; bottom: -2000em;">Am visible?</div>
 
-  <script src="/js/novicell.visible.js"></script>
+  <script src="/docs/js/novicell.visible.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       // Do not use this, only for example purposes!
@@ -46,8 +45,6 @@
         event.preventDefault();
 
         var elementId = '#js-outside-viewport';
-
-        console.log(novicell.visible.isVisible(elementId));
 
         document.querySelector('#js-visible-result').innerHTML = novicell.visible.isVisible(elementId);
       });
@@ -112,10 +109,10 @@
     }
   </script>
 
-  <script id="pl-js-polyfill-insert-1500560060592">
+  <script id="pl-js-polyfill-insert-1500571487885">
     (function() {
       if (self != top) {
-        var cb = '1500560060592';
+        var cb = '1500571487885';
         var js = [];
         if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
           js.push('styleguide/bower_components/classList.min.js');
@@ -125,10 +122,10 @@
     })();
   </script>
 
-  <script id="pl-js-insert-1500560060592">
+  <script id="pl-js-insert-1500571487885">
     (function() {
       if (self != top) {
-        var cb = '1500560060592';
+        var cb = '1500571487885';
         var js = [{
           'src': 'styleguide/bower_components/jwerty.min.js',
           'dep': ['styleguide/js/patternlab-pattern.min.js']
