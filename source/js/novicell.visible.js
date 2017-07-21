@@ -5,6 +5,7 @@
  * @desc A script that checks whether elements are within the users visible viewport.
  * @author Brian Stefan Jensen (BSJ)
  * @example
+ *  Check for an element: novicell.visible.isVisible(querySelector)
  * @requires none
  */
 
